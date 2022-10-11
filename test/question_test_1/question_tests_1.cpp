@@ -6,7 +6,10 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
+TEST_CASE("test get sales commission")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(get_sales_comission(100) == 5);
+	REQUIRE(get_sales_comission(750) == 45);
+	REQUIRE(get_sales_comission(1100) == 77);
+	REQUIRE(get_sales_comission(1750) == 140);
 }
