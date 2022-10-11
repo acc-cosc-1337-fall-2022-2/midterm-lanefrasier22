@@ -1,6 +1,8 @@
 #include "question3.h"
+#include <iostream>
+#include <string>
 
-bool test_config()
+int binary_to_decimal(std::string binary)
 {
-    return true;
+    return stoi(binary, 0, 2);
 }
